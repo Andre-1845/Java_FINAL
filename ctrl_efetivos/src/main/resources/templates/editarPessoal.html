@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+</head>
+<body>
+
+    <div class="container">
+    
+    
+
+        <form action="#" th:action="@{/update/{id} (id=${pessoal.id})}" th:object="${pessoal}" method="post">
+
+            <div class="mb-3">
+                <label class="form-label" for="nome">1. Nome completo:</label>
+                <input class="form-control" type="text" id="nome" th:field="*{nome}" placeholder="Digite o nome completo">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nomeGuerra">2. Nome de Guerra:</label>
+                <input class="form-control" type="text" id="nomeGuerra" th:field="*{nomeGuerra}"  placeholder="Digite nome de guerra">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="postoGrad">3. Posto/Grad:</label>
+                <input class="form-control" type="text" id="postoGrad" th:field="*{postoGrad}"  placeholder="Digite posto ou graduaçao abreviado">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="arma">4. Arma:</label>
+                <input class="form-control" type="text" id="arma" th:field="*{arma}"  placeholder="Digite a arma">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="especialidade">5. Especialidade:</label>
+                <input class="form-control" type="text" id="especialidade" th:field="*{especialidade}">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="idtMil">6. Identidade Militar:</label>
+                <input class="form-control" type="text" id="idtMil" th:field="*{idtMil}"  placeholder="xxxxxxxxx-x">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="segmento">7. Segmento:</label>
+                <input class="form-control" type="text" id="segmento" th:field="*{segmento}"  placeholder="Masc ou Fem">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="situacao">8. Situação:</label>
+                <input class="form-control" type="text" id="situacao" th:field="*{situacao}"  placeholder="Ativa ou Reserva">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="formacao">9. Formação:</label>
+                <input class="form-control" type="text" id="formacao" th:field="*{formacao}"  placeholder="AMAN, QCO, ESA, EsSEX, Temp">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="dataApres">10. Data de apresentação no COTER:</label>
+                <input class="form-control" type="text" id="dataApres" th:field="*{dataApres}"  placeholder="Data dd/mm/aaaa">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="dataPraca">11. Data de Praça:</label>
+                <input class="form-control" type="text" id="dataPraca" th:field="*{dataPraca}"  placeholder="Data dd/mm/aaaa">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="pnr">Ocupa PNR ? (s/n):</label>
+                <input class="form-control" type="text" id="pnr" th:field="*{pnr}" placeholder="Sim = 1 , Não = 0 -apenas numeros">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="setor">Setor (Chefia):</label>
+                <input class="form-control" type="text" id="setor" th:field="*{setor}">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">EDITAR</button>
+        
+        </form>     
+    
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>

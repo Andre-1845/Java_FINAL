@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Integrantes</title>
+
+    <link rel="stylesheet" type="text/css" th:href="@{style/cadastro.css}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+</head>
+
+<body>
+    <div id="pagina">
+        <div id="banner">
+            <div id="img1"></div>
+            <div id="img2">CADASTRO DE INTEGRANTES DO COTER</div>
+        </div>
+        <nav>
+            <div><a href="ctrlEfetivos">Inicio</a></div>
+            <div><a href="contato">Contato</a></div>
+
+        </nav>
+
+        <form action="#" th:action="@{/cadastro}" th:object="${pessoal}" method="post">
+            <fieldset>
+                <legend></legend>
+
+                <div class="mb-3">
+                    <label class="form-label" for="nome">1. Nome completo:</label>
+                    <input class="form-control" type="text" id="nome" th:field="*{nome}" placeholder="Digite o nome completo">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="nomeGuerra">2. Nome de Guerra:</label>
+                    <input class="form-control" type="text" id="nomeGuerra" th:field="*{nomeGuerra}"  placeholder="Digite nome de guerra">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="postoGrad">3. Posto/Grad:</label>
+                    <input class="form-control" type="text" id="postoGrad" th:field="*{postoGrad}"  placeholder="Digite posto ou graduaçao abreviado">
+                </div>
+                
+                 <!--form do bootstrap -->
+                
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">4. Arma</label>
+                    <select class="form-select" id="inputGroupSelect01" th:field="*{arma}">
+                      
+                      <option value="Inf">Inf</option>
+                      <option value="Cav">Cav</option>
+                      <option value="Art">Art</option>
+                      <option value="Eng">Eng</option>
+                      <option value="Com">Com</option>
+                      <option value="Int">Int</option>
+                      <option value="MB">MB</option>
+                      <option value="QCO">QCO</option>
+                      <option value="Av Ap">Av Ap</option>
+                      <option value="QAO">QAO</option>
+                      <option value="OTT">OTT</option>
+                      <option value="STT">STT</option>
+                      <option value="Sau">Sau</option>
+                    </select>
+                  </div>
+                  
+
+                <!-- form do bootstrap-->
+                <div class="mb-3">
+                    <label class="form-label" for="especialidade">5. Especialidade:</label>
+                    <input class="form-control" type="text" id="especialidade" th:field="*{especialidade}">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="idtMil">6. Identidade Militar:</label>
+                    <input class="form-control" type="text" id="idtMil" th:field="*{idtMil}"  placeholder="xxxxxxxxx-x">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="segmento">7. Segmento:</label>
+                    <input class="form-control" type="text" id="segmento" th:field="*{segmento}"  placeholder="Masc ou Fem">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="situacao">8. Situação:</label>
+                    <input class="form-control" type="text" id="situacao" th:field="*{situacao}"  placeholder="Ativa ou Reserva">
+                </div>
+                <!-- Form BOOTSTRAP -->
+                <div class="input-group">
+                    <div class="input-group-text">
+                      <input class="form-check-input mt-0" type="radio" value="" aria-label="TEXTO 1" name="ativa">
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with radio button">
+                  
+
+                  <div class="input-group-text">
+                      <input class="form-check-input mt-0" type="radio" value="" aria-label="RTEXTO 2t" name="ativa">
+                    </div>
+                    <input type="text" class="text" aria-label="Teste de texto">Teste
+                  </div>
+
+
+                <!-- Form BOOTSTRAP -->
+                <!-- Form BOOTSTRAP -->
+
+
+                <div class="mb-3">
+                    <label class="form-label" for="formacao">9. Formação:</label>
+                    <input class="form-control" type="text" id="formacao" th:field="*{formacao}"  placeholder="AMAN, QCO, ESA, EsSEX, Temp">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="dataApres">10. Data de apresentação no COTER:</label>
+                    <input class="form-control" type="text" id="dataApres" th:field="*{dataApres}"  placeholder="Data dd/mm/aaaa">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="dataPraca">11. Data de Praça:</label>
+                    <input class="form-control" type="text" id="dataPraca" th:field="*{dataPraca}"  placeholder="Data dd/mm/aaaa">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="pnr">12. Ocupa PNR ? (s/n):</label>
+                    <input class="form-control" type="text" id="pnr" th:field="*{pnr}" placeholder="Sim = 1 , Não = 0 -apenas numeros">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="setor">13. Setor (Chefia):</label>
+                    <input class="form-control" type="text" id="setor" th:field="*{setor}">
+                </div>
+                
+            </fieldset>
+            <div id="resetPos">
+                <button type="submit" id="submit">enviar</button><br>
+                <button type="reset" id="reset">reset</button>
+            </div>
+
+            </div>
+            <div id="voltarPos">
+                <a href="ctrlEfetivos">
+                    <div id="voltar">VOLTAR</div>
+                </a>
+            </div>
+
+<!--  COLADO do outro site-->
+
+
+        </form>     
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

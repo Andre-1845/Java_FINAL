@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" th:href="@{style/index.css}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>Ctrl Efetivos</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-2 me-5" href="#" id="ctref">CONTROLE DE EFETIVOS - COTER</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active" aria-current="page" href="login">LOGIN</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="cadastro">Cadastro de integrantes</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="contato2">Exibir cadastro</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="contato">Contato</a>
+                        </li>
+                        
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--CAROUSEL-->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <!-- CAROSSEL INICIO -->
+        <div class="carousel-inner">
+
+            <div class="carousel-item active" style="height: 600px">
+                <img src="imagens/Adestr.jpg" alt="" class="d-block w-100">
+                <div class="carousel-caption d-block">
+                    <h5>Preparo</h5>
+                </div>
+            </div>
+            <!-- CAROSSEL ITEM -->
+
+            <div class="carousel-item" style="height: 600px">
+                <img src="imagens/Operacao.jpg" alt="" class="d-block w-100">
+                <div class="carousel-caption d-block" style="color: black">
+                    <h5>Emprego</h5>
+                </div>
+            </div>
+            <!-- CAROSSEL ITEM -->
+            <div class="carousel-item" style="height: 600px">
+                <img src="imagens/Dout.jpg" alt="" class="d-block w-100">
+                <div class="carousel-caption d-block">
+                    <h5>Doutrina</h5>
+                </div>
+            </div>
+            <!-- CAROSSEL ITEM -->
+            <div class="carousel-item" style="height: 600px">
+                <img src="imagens/MntPaz2.jpg" alt="" class="d-block w-100">
+                <div class="carousel-caption d-block">
+                    <h5>Mnt Paz, Aviação, IGPM</h5>
+                </div>
+            </div>
+
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-dark py-3 fs-4">
+            <div class="d-flex justify-content-center" id="rodape">A vitória terrestre começa aqui.</div>
+        </div>
+    </footer>
+    
+   
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

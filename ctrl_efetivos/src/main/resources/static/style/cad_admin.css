@@ -1,0 +1,144 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(37, 58, 4); 
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#pagina{
+    margin: 0px auto; 
+     
+}
+
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    height: 120px;
+   
+}
+
+#img1{
+    display: flex;
+    height: 100px;
+    width: 10%;
+    background-image: url(../imagens/coter_logo2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+#img2{
+    display: flex;
+    height: 100px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: transparent;
+       
+}
+
+
+nav{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    font-weight: bold;
+    column-gap: 20px;
+    background-color: black;
+    
+}
+
+nav a{
+    padding: 10px 30px;
+    background-color: black;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+
+#situacao{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    column-gap: 20px;
+    justify-content: left;
+}
+
+#resetPos{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    row-gap: 10px;
+}
+
+#submit{
+    display: flex;
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+}
+
+#reset{
+    display: flex;
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    
+}
+ #voltarPos{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+ }
+
+#voltar{
+    display: flex;
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+   
+    
+}
+
+#voltar a{
+    color: white;
+    background-color: black;
+   
+}
+
+#login_texto{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}

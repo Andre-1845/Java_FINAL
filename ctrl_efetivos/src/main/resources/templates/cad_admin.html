@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cad_ADMIN</title>
+
+    <link rel="stylesheet" type="text/css" th:href="@{style/cad_admin.css}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+</head>
+
+<body>
+    <div id="pagina">
+        <div id="banner">
+            <div id="img1"></div>
+            <div id="img2">CADASTRO DE USUÁRIOS DO SISTEMA</div>
+        </div>
+        <nav>
+            <div><a href="ctrlEfetivos">Inicio</a></div>
+            <div><a href="contato">Contato</a></div>
+
+        </nav>
+
+        <form action="#" method="get">
+            <fieldset>
+                <legend></legend>
+
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" required placeholder="nome completo"><br>
+
+                <label for="nome">Nome de guerra:</label>
+                <input type="text" id="nomeGuerra" required placeholder="nome de guerra"><br>
+
+                <label for="pGrad">Posto/Graduação:</label>
+                <input type="text" id="pGrad" required placeholder="Posto / Graduação"><br>
+
+                <label for="arma">Arma/Q/Sv</label>
+                <input type="text" id="arma" required placeholder="arma, quadro ou serviço"><br>
+                <label for="idt">Idt: </label>
+                <input type="number" id="idt" required placeholder="identidade (apenas números)"><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="e-mail"><br>
+
+                
+                <label for="senha">Senha</label>
+                <input type="password" id="senha1" required placeholder="senha"><br>
+                <label for="repitaSenha">Repita a senha</label>
+                <input type="password" id="senha2" required placeholder="senha">
+
+                <div id="login_texto">
+                    <h3>Seu LOGIN será o número de sua identidade.</h3>
+                </div>
+
+
+            </fieldset>
+            <div id="resetPos">
+                <button type="submit" id="submit">enviar</button><br>
+                <button type="reset" id="reset">reset</button>
+            </div>
+    </div>
+    <div id="voltarPos">
+        <a href="ctrlEfetivos">
+            <div id="voltar">VOLTAR</div>
+        </a>
+    </div>
+
+
+</body>
+
+</html>

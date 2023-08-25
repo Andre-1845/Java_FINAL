@@ -1,0 +1,96 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(37, 58, 4); 
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#pagina{
+    margin: 0px auto;   
+}
+
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    height: 120px;
+   
+}
+
+#img1{
+    display: flex;
+    height: 100px;
+    width: 10%;
+    background-image: url(../imagens/coter_logo2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+#img2{
+    display: flex;
+    height: 100px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: transparent;
+       
+}
+
+
+#recuperacaoTit{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: black;
+    border: 3px solid white;
+    justify-content: center;
+}
+
+#recuperacaoTexto{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    justify-content: center;
+}
+
+#voltar:hover{
+    box-shadow: 5px 5px 10px;
+}
+
+#voltarPos{
+        display: flex;
+        width: 100%;
+        height: 100px;
+        justify-content: center;
+        
+}
+    
+#voltar{
+        display: flex;
+        width: 100px;
+        height: 30px;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 10px;
+        border-color: white;
+        
+    }
+
+
+
+

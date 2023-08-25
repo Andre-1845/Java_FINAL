@@ -1,0 +1,123 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(37, 58, 4); 
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#pagina{
+    margin: 0px auto;   
+}
+
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    height: 120px;
+   
+}
+
+#img1{
+    display: flex;
+    height: 100px;
+    width: 10%;
+    background-image: url(imagens/coter_logo2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+#img2{
+    display: flex;
+    height: 100px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: transparent;
+       
+}
+
+
+nav{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    font-weight: bold;
+    column-gap: 20px;
+    background-color: black;
+    
+}
+
+nav a{
+    padding: 10px 30px;
+    background-color: black;
+
+}
+
+#boxLogin{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 30px;
+}
+
+#sistemaTit{
+    padding: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: double;
+}
+
+.entrar{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    align-items: center;   
+    padding: 10px;
+}
+
+.entrar:hover{
+    box-shadow: 5px 5px 10px;
+}
+
+#login{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin-left: 10px;
+    
+}
+
+#senha{
+    background-color:white;
+    color: black;
+    padding: 10px;
+    margin-left: 10px;
+    
+}
+
+#botao{
+    background-color: black;
+    border-radius: 15px;
+}
+
+#esqueci{
+    font-size: 15px;
+}
+
+footer{
+    background-color: black;
+    height: 80px;
+    width: 100%;
+}
+

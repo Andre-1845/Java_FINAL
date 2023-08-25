@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrantes</title>
+
+    <link rel="stylesheet" type="text/css" th:href="@{style/contato2.css}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <div id="pagina">
+        <div id="banner">
+            <div id="img1"></div>
+            <div id="img2">COMANDO DE OPERAÇÕES TERRESTRES</div>
+        </div>
+        <div id="recuperacaoTit">INTEGRANTES CADASTRADOS</div>
+        <main>
+            
+                <div>
+                    <span th:text="${requisicao}"></span>
+                </div>
+                
+                <div class="container-fluid d-flex justify-content-center">
+                    <table >
+                        <tr>
+                            <th>P/G</th>
+                            <th>Nome de Guerra</th>
+                            <th>Setor</th>
+                            <th>Editar</th>
+                            <th>Excluir</th>
+                        </tr>
+                        <tr th:each="pessoal : ${integrantes}">    
+                            <td><span th:text="${pessoal.postoGrad}"></span></td>
+                            <td><span th:text="${pessoal.nomeGuerra}"></span></td>
+                            <td><span th:text="${pessoal.setor}"></span></td>
+                            <td><a th:href="@{/edit/{id}(id=${pessoal.id})}">Edit</a></td>
+                            <td><a th:href="@{/delete/{id}(id=${pessoal.id})}">Delete</a></td>
+                            
+                        </tr>
+                            
+                
+                
+                
+                    </table>
+                </div>
+          
+           
+           <div id="voltarPos">
+                <a href="ctrlEfetivos">
+                    <div id="voltar">INÍCIO</div>
+                </a>
+            </div>
+        </main>
+        
+            
+
+        
+    </div>
+
+</body>
+
+</html>
