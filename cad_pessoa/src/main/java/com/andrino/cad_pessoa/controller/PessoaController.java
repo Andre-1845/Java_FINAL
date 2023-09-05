@@ -1,18 +1,18 @@
 package com.andrino.cad_pessoa.controller;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import com.andrino.model.Endereco;
+import com.andrino.cad_pessoa.controller.dto.PessoaDto;
 import com.andrino.model.Pessoa;
-import com.andrino.model.Telefone;
-import com.andrino.model.TipoTelefone;
 
+
+/* EXEMPLO de inicio
+ 
 @Controller
 public class PessoaController {
 	
@@ -28,6 +28,19 @@ public class PessoaController {
 		return Arrays.asList(pessoa, pessoa, pessoa, pessoa);
 	}
 	
-	
+}
+*/
 
+@RestController
+@RequestMapping("/pessoas")
+public class PessoaController {
+	
+	
+	@GetMapping
+	public List<PessoaDto> listarPessoa(){
+		List<Pessoa> pessoas = pessoaRepository.findAll();
+		
+		return Arrays.asList(pessoas, pessoas, pessoas, pessoas);
+	}
+	
 }
